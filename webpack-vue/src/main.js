@@ -5,6 +5,7 @@ import Vue from "../node_modules/vue/dist/vue.min.js";//其实不用写完，会
 import app from './components/app';
 
 
+
 Vue.config.debug = true;//开启语法错误提示
 
 new Vue(app);
