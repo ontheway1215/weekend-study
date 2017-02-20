@@ -1,0 +1,14 @@
+body {
+	background: red;
+	color: blue;
+}
+.asd {
+	width: 30px;
+	height: 30px;
+	background: url(case-cell-ali.png) no-repeat center center;
+}
+.qwe {
+	width: 30px;
+	height: 30px;
+	background: url(case-cell-baidu.png) no-repeat center center;
+}
