@@ -5,8 +5,8 @@
 		//data:function(){}, 下面是es6语法
 		data () {
 			return {
-				name: "guowenfh",
-				age: "2q1"
+				name: "chen",
+				age: "24"
 			}	   
 		}
 	}
