@@ -4,16 +4,23 @@
 		<meta charset="UTF-8">
 		<title>webpack vue</title>
 		<style type="text/css">
+			*, *:before, *:after {
+				box-sizing: border-box;
+			}
+			body, html {
+				height: 100%;
+				overflow: hidden;
+			}
 			#app {
-				width: 400px;
-				height: 300px;
+				width: 800px;
+				height: 600px;
 				margin: 20px auto;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="app">
-			<div>haha</div>
+			<router-view></router-view>
 		</div>
 		<script src="dist/main.js"></script>
 	</body>
