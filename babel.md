@@ -130,7 +130,6 @@ babel-node也可以安装在项目中。
 
 ```
 $ npm install --save-dev babel-cli
-
 ```
 然后，改写package.json
 
@@ -153,7 +152,6 @@ Babel默认只转换新的JavaScript句法（syntax），而不转换新的API�
 
 ```
 $ npm install --save babel-polyfill
-
 ```
 然后，在脚本头部，加入如下一行代码。
 
