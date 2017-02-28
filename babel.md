@@ -10,7 +10,6 @@ input.map(item => item + 1);
 input.map(function (item) {
   return item + 1;
 });
-
 ```
 上面使用了箭头函数，需要Babel将其转换为ES5代码
 
@@ -25,7 +24,6 @@ Babel的配置文件是.babelrc，存放在项目的根目录下。
   "presets": [],
   "plugins": []
 }
-
 ```
 presets字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。
 
@@ -41,7 +39,6 @@ $ npm install --save-dev babel-preset-stage-0
 $ npm install --save-dev babel-preset-stage-1
 $ npm install --save-dev babel-preset-stage-2
 $ npm install --save-dev babel-preset-stage-3
-
 ```
 然后，将这些规则加入.babelrc。
 
@@ -53,8 +50,7 @@ $ npm install --save-dev babel-preset-stage-3
       "stage-2"
     ],
     "plugins": []
-  }
-  
+ }
 ```
 注意，以下所有Babel工具和模块的使用，都必须先写好.babelrc。
 
@@ -63,7 +59,6 @@ $ npm install --save-dev babel-preset-stage-3
 
 ```
 $ npm install --global babel-cli
-
 ```
 基本用法
 
@@ -85,17 +80,15 @@ $ babel src -d lib
 
 # -s 参数生成source map文件
 $ babel src -d lib -s
-
 ```
 上面代码是在全局环境下，进行Babel转码。这意味着，如果项目要运行，全局环境必须有Babel，也就是说项目产生了对环境的依赖。另一方面，这样做也无法支持不同项目使用不同版本的Babel。
 
 一个解决办法是将babel-cli安装在项目之中。
-
 ```
 # 安装
 $ npm install --save-dev babel-cli
-
 ```
+
 然后，改写package.json。
 
 ```
@@ -108,13 +101,10 @@ $ npm install --save-dev babel-cli
     "build": "babel src -d lib"
   },
 }
-
 ```
 转码的时候，就执行下面的命令。
-
 ```
 $ npm run build
-
 ```
 
 ##babel-node
@@ -171,7 +161,6 @@ $ npm install --save babel-polyfill
 import 'babel-polyfill';
 // 或者
 require('babel-polyfill');
-
 ```
 
 下面是如何将代码打包成浏览器可以使用的脚本，以Babel配合Browserify为例。首先，安装babelify模块。
