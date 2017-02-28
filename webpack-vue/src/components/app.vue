@@ -29,7 +29,8 @@
 		<a v-link="{ name: 'index' }">回去主页</a>
 		<a v-link="{ name: 'hello' }">嵌套的路由</a>
 		<hello></hello>
-		<router-view></router-view>	
+		<router-view></router-view>
+		<a v-link="{ n}"></a>
 	</div>
 </template>
 <style lang="sass">
